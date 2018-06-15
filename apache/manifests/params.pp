@@ -14,8 +14,8 @@ $apache_service_name= 'apache2'
 
 'redhat':{
 
-$apache_package_name= 'apache2'
-$apache_service_name= 'apache2'
+$apache_package_name= 'httpd'
+$apache_service_name= 'httpd'
 
 
 }
