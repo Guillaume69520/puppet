@@ -8,6 +8,8 @@ case $::osfamily {
 
 $lamp_sql_package_name= 'mysql-server'
 $lamp_sql_service_name= 'mysql'
+$lamp_php_package_name= 'php'
+$lamp_php_service_name= 'php7.0-fpm'
 
 }
 
@@ -15,7 +17,9 @@ $lamp_sql_service_name= 'mysql'
 'redhat':{
 
 $lamp_sql_package_name= 'mysql-server'
-$lamp_sql_service_name= 'mysql'
+$lamp_sql_service_name= 'mysqld'
+$lamp_php_package_name= 'php'
+$lamp_php_service_name= 'php'
 
 
 }
