@@ -1,0 +1,29 @@
+class apache::params{
+
+notify {"Your operating system is ${::operatingsystem} from the ${::osfamily} family":}
+
+case $::osfamily {
+
+'Debian':{
+
+$apache_package_name= 'apache2'
+$apache_service_name= 'apache2'
+
+}
+
+
+'redhat':{
+
+$apache_package_name= 'apache2'
+$apache_service_name= 'apache2'
+
+
+}
+
+default:{
+
+fail("This manifest does not support ${::osfamily} Linux flavour")}
+
+}
+
+}
