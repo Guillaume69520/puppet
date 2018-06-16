@@ -1,6 +1,6 @@
 class apache::params{
 
-notify {"Your operating system is ${::operatingsystem} from the ${::osfamily} family":}
+#notify {"Your operating system is ${::operatingsystem} from the ${::osfamily} family":}
 
 case $::osfamily {
 

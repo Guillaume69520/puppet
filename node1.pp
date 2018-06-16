@@ -1,7 +1,8 @@
 node 'vbox-essir' {
 
-        $apache_port = 81
-        include apache
+	$sshd_port = 23
+	$sshd_protocol = 2
+	$apache_port = 80 
+	include sshd
+	include munin
 }
-
-
